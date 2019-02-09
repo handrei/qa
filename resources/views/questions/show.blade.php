@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -28,7 +27,7 @@
                             </a>
                             <a title="Click to mark as favorite question(click again to undo)" class="favorite mt-2 favorited">
                                 <i class="fas fa-star fa-2x"></i>
-                                <span class="favorites-count"> 
+                                <span class="favorites-count">
                                     123
                                 </span>
                             </a>
@@ -56,11 +55,10 @@
             </div>
         </div>
     </div>
-@include('answers._index', [
-    'answers' => $question->answers,
-    'answersCount' =>  $question->answers_count, 
-])
-@include('answers._create')
+    @include('answers._index', [
+        'answers' => $question->answers,
+        'answersCount' =>  $question->answers_count,
+        ])
+    @include('answers._create')
 </div>
-
 @endsection

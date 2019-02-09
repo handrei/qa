@@ -1,10 +1,10 @@
 <div class="row mt-4">
-    <div class="col-md-12"> 
+    <div class="col-md-12">
         <div class="card">
             <div class="card-body">
                 <div class="card-title">
                     <h3>
-                        Your answer
+                    Your answer
                     </h3>
                 </div>
                 <hr>
@@ -13,9 +13,9 @@
                     <div class="form-group">
                         <textarea class="form-control {{$errors->has('body') ? 'is-invalid' : ''}}" rows="7" name="body"></textarea>
                         @if ($errors->has('body'))
-                            <div class="invalid-feedback">
-                                <strong> {{ $errors->first('body')}}</strong>
-                            </div>
+                        <div class="invalid-feedback">
+                            <strong> {{ $errors->first('body')}}</strong>
+                        </div>
                         @endif
                     </div>
                     <div class="form-group">
